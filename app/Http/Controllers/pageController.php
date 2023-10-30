@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 use App\Models\main;
 use Illuminate\Http\Request;
 use App\Models\service;
+use App\Models\protfollio;
+use App\Models\About;
+
+use Illuminate\Support\Facades\storage;
 
 class pageController extends Controller
 {
@@ -16,7 +20,10 @@ class pageController extends Controller
     {
         $main=main::first();
         $service= service::all();
-        return view('pages.main' ,compact('main','service'));
+        $protfollio=protfollio::all();
+        $about=about::all();
+
+        return view('pages.main' ,compact('main','service','protfollio','about'));
     }
 
     public function adminmain()

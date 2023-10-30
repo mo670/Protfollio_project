@@ -49,8 +49,8 @@
       {{ method_field('PUT')}}
       
           <div class="form-group col-md-3 mt-3">
-              <h3>Background Image</h3>
-          <img style="height: 30vh" src="{{(@$main->bc_img)?url($main->bc_img):asset("assets/img/bc_img.jpg")}}" class="img-thumbnail">
+              <h3>Background Image</h3>"
+          <img style="height: 30vh" src="{{(@$main->bc_img)?url($main->bc_img):asset("assets/img/bc_img.jpg")}}"class="img-thumbnail">
           <input class="mt-3" type="file" id="bc_img" name="bc_img">
           </div>
           <div class="form-group col-md-4 mt-3">
