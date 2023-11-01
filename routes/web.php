@@ -54,3 +54,7 @@ Route::get('/deleteabout/{id}', [App\Http\Controllers\AboutController::class, 'd
 
 
 
+Route::post('/contactstore', [App\Http\Controllers\ContractController::class, 'store'])->name('contact.store');
+
+
+
