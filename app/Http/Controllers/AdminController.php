@@ -7,6 +7,7 @@ use PhpParser\Builder\FunctionLike;
 
 class AdminController extends Controller
 {
+  
     public function servicecreate(){
         return view('pages.services.create');
     }

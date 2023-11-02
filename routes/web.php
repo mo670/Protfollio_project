@@ -23,7 +23,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/admin', [App\Http\Controllers\pageController::class, 'home'])->name('admin');
-Route::get('/main', [App\Http\Controllers\pageController::class, 'main'])->name('main');
+Route::get('/', [App\Http\Controllers\pageController::class, 'main'])->name('main');
 Route::get('/adminmain', [App\Http\Controllers\pageController::class, 'adminmain'])->name('adminmain');
 Route::put('/submitmain', [App\Http\Controllers\pageController::class, 'submitmain'])->name('submitmain');
 Route::get('/submitcreate', [App\Http\Controllers\AdminController::class, 'servicecreate'])->name('submitcreate');

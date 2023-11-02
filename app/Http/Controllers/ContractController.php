@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Mail;
 
 class ContractController extends Controller
 {
+  public function __construct()
+  {
+      $this->middleware('auth');
+  }
     public function store(){
         $contract_form_data = request()->all();
         Mail::to('moutusiislam70@gmail.com')->send(new ContractForMail($contract_form_data));
